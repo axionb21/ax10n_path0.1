@@ -70,6 +70,6 @@ ctf-portfolio/
 
 <div align="center">
 
-**Made with 🔥 by b21** · [Portfolio](https://b21chat.online)
+**Made with 🔥 by b21** · [full walkthrough ]([https://b21chat.online](https://axionb21.github.io/ax10n_path0.1/))
 
 </div>
