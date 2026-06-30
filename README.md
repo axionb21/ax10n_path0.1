@@ -2,7 +2,7 @@
 
 # 🚩 CTF Writeups & Progress Tracker
 
-[![CTFs Solved](https://img.shields.io/badge/CTFs-12-blue?style=for-the-badge)](#)
+[![CTFs Solved](https://img.shields.io/badge/CTFs-1-blue?style=for-the-badge)](#)
 [![HTB](https://img.shields.io/badge/HTB-✓-success?style=for-the-badge)](#)
 [![Web](https://img.shields.io/badge/Web-✓-success?style=for-the-badge)](#)
 [![Status](https://img.shields.io/badge/Active-🟢-brightgreen?style=for-the-badge)](#)
