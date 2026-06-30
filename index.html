@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Writeups</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#/">Writeups<span class="dot">.</span></a>
+      <span id="repo-label" class="repo-label"></span>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- EVENTS VIEW (home) -->
+    <section id="view-events">
+      <div class="page-head">
+        <h1>CTF Events</h1>
+        <p class="lede">Writeups grouped by competition. Pick an event to see its challenges.</p>
+      </div>
+      <div id="events-status" class="status"></div>
+      <div id="events-grid" class="event-grid"></div>
+    </section>
+
+    <!-- EVENT VIEW (writeup list inside one event) -->
+    <section id="view-event" class="hidden">
+      <nav class="breadcrumb"><a href="#/">All events</a><span class="sep">/</span><span id="event-crumb"></span></nav>
+      <div class="page-head">
+        <h1 id="event-title"></h1>
+        <p class="lede" id="event-count"></p>
+      </div>
+      <div id="event-status" class="status"></div>
+      <ol id="writeup-list" class="writeup-list"></ol>
+    </section>
+
+    <!-- WRITEUP DETAIL VIEW -->
+    <section id="view-detail" class="hidden">
+      <nav class="breadcrumb">
+        <a href="#/">All events</a><span class="sep">/</span>
+        <a id="detail-event-link" href="#/">.</a><span class="sep">/</span>
+        <span id="detail-crumb"></span>
+      </nav>
+      <div id="detail-status" class="status"></div>
+      <article id="detail-content" class="writeup"></article>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">Plain‑text writeups · tags: &lt;t&gt; &lt;st&gt; &lt;c&gt; &lt;img&gt; · folders: files/&lt;event&gt;/&lt;writeup&gt;.txt</div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
