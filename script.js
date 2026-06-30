@@ -1,10 +1,7 @@
-/* ============================================================
-   CONFIG — edit these 3 lines for your own GitHub repo
-   ============================================================ */
 const CONFIG = {
-  GITHUB_USER: "your-github-username",   // e.g. "b21chat"
-  REPO_NAME:   "your-repo-name",          // e.g. "ctf-writeups"
-  FOLDER:      "writeups",                // folder inside the repo that holds .txt files
+  GITHUB_USER: "axionb21",   // e.g. "b21chat"
+  REPO_NAME:   "ax10n_path0.1",          // e.g. "ctf-writeups"
+  FOLDER:      "files",                // folder inside the repo that holds .txt files
   BRANCH:      "main"                     // branch name, usually "main"
 };
 
@@ -14,15 +11,6 @@ const RAW_BASE = `https://raw.githubusercontent.com/${CONFIG.GITHUB_USER}/${CONF
 document.getElementById("repo-label").textContent =
   `${CONFIG.GITHUB_USER}/${CONFIG.REPO_NAME}`;
 
-/* ============================================================
-   TAG PARSER
-   Supported tags inside a .txt writeup file:
-     <t>  ... </t>   -> page title       (use once, near the top)
-     <st> ... </st>  -> section subtitle (use as many times as needed)
-     <c>  ... </c>   -> command / terminal block
-     <img> path </img> -> image (relative path or full URL)
-   Any plain text outside tags becomes a normal paragraph.
-   ============================================================ */
 function parseWriteup(raw) {
   const blocks = [];
   const tagPattern = /<(t|st|c|img)>([\s\S]*?)<\/\1>/g;
