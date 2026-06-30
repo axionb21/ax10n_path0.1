@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚩 CTF Writeups & Progress Tracker
+# |> CTF Writeups & Progress Tracker
 
 [![CTFs Solved](https://img.shields.io/badge/CTFs-1-blue?style=for-the-badge)](#)
 [![HTB](https://img.shields.io/badge/HTB-✓-success?style=for-the-badge)](#)
@@ -13,7 +13,7 @@
 
 ---
 
-## 📊 Challenge Log
+##  Challenge Log
 
 <table>
 <tr>
@@ -44,7 +44,7 @@
 
 ---
 
-## 🎞️ Exploit Demo
+## web site  Demo
 
 <div align="center">
 <img src="./video.photo/new01.gif" width="600" alt="exploit demo gif">
