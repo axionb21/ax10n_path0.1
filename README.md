@@ -47,7 +47,7 @@
 ## 🎞️ Exploit Demo
 
 <div align="center">
-<img src="./assets/demo.gif" width="600" alt="exploit demo gif">
+<img src="./video.photo/new01.gif" width="600" alt="exploit demo gif">
 </div>
 
 ---
