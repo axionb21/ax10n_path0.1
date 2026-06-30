@@ -46,10 +46,9 @@
 
 ## 🎞️ Exploit Demo
 
-<video width="600" autoplay loop muted playsinline>
-  <source src="./video.photos/new01" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div align="center">
+<img src="./assets/demo.gif" width="600" alt="exploit demo gif">
+</div>
 
 ---
 
