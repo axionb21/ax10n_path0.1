@@ -1,0 +1,15 @@
+<t>Open Redirect - Web</t>
+
+This challenge had a login flow that redirected users based on an unvalidated "next" query parameter.
+
+<st>Spotting it</st>
+
+The login form passed a redirect target straight into a Location header.
+
+<c>
+curl -i "https://target.site/login?next=https://evil.example"
+</c>
+
+<st>Flag</st>
+
+SEKAI{example_open_redirect_flag}
