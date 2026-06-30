@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Writeups</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#/">Writeups<span class="dot">.</span></a>
+      <nav class="meta-nav">
+        <span id="repo-label" class="repo-label"></span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- LIST VIEW -->
+    <section id="view-list">
+      <div class="list-head">
+        <h1>CTF Writeups</h1>
+        <p class="lede">Notes from challenges I solved — pwn, web, misc, and everything between.</p>
+      </div>
+      <div id="list-status" class="status"></div>
+      <div id="card-grid" class="card-grid"></div>
+    </section>
+
+    <!-- DETAIL VIEW -->
+    <section id="view-detail" class="hidden">
+      <a href="#/" class="back-link">&larr; All writeups</a>
+      <div id="detail-status" class="status"></div>
+      <article id="detail-content" class="writeup"></article>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">Built for plain‑text writeups · tags: &lt;t&gt; &lt;st&gt; &lt;c&gt; &lt;img&gt;</div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
