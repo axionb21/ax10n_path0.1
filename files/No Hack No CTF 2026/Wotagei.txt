@@ -1,0 +1,86 @@
+<t>Wotagei – OSINT Challenge</t>
+Event: No Hack No CTF 2026 (ICEDTEA)
+Category: OSINT | Points: 100
+
+<t>Challenge Description</t>
+Find the Instagram account of the person on the far left in a GIF file.
+Flag Format: NHNC{their_instagram_username}
+Attachment: wota.gif (animated video of synchronized dance with glow sticks)
+
+<st>Step 1 – Analyze the GIF</st>
+The GIF showed people performing Wotagei (Japanese synchronized glow stick dance).
+No metadata or hidden data → pure OSINT challenge.
+Strategy: Reverse image search to find original source.
+
+<c>
+# Extract frame from GIF (optional automation)
+from PIL import Image
+import os
+
+gif = Image.open('wota.gif')
+gif.seek(0)  # Get first frame
+gif.save('frame.png')
+</c>
+
+<st>Step 2 – Reverse Image Search</st>
+Tool: Google Lens (browser extension or web.google.com/imagesearch)
+Method: Upload GIF or extracted frame
+Result: Found YouTube video matching the GIF
+
+YouTube Channel: GinyuforcE-ギニューフォース-
+Video URL: https://youtu.be/FLELM-y-JpU?si=7V_gxhtS65YdLSQt
+Timestamp Match: 00:20 → 00:25 (exact scene from GIF)
+
+<st>Step 3 – YouTube AI Feature</st>
+Instead of manual search, used YouTube's AI assistant.
+Question Asked: "What is the Instagram account of the person on the far left?"
+AI Response: gear_stephenie
+
+<c>
+# Automated YouTube metadata extraction (if available)
+from urllib.parse import urlparse, parse_qs
+import requests
+
+# Extract video ID from YouTube URL
+url = "https://youtu.be/FLELM-y-JpU?si=7V_gxhtS65YdLSQt"
+video_id = url.split('youtu.be/')[1].split('?')[0]
+print(f"Video ID: {video_id}")
+
+# Note: Full YouTube API requires authentication and quota
+# Manual inspection of description/comments still most reliable
+</c>
+
+<st>Step 4 – Construct Flag</st>
+Format: NHNC{username}
+Substitute: gear_stephenie
+Final Flag: NHNC{gear_stephenie}
+
+<st>Solve Path</st>
+wota.gif
+  ↓
+Google Lens (reverse image search)
+  ↓
+YouTube video found
+  ↓
+GinyuforcE-ギニューフォース-
+(timestamp: 00:20–00:25)
+  ↓
+YouTube AI → Instagram username
+  ↓
+gear_stephenie
+  ↓
+NHNC{gear_stephenie}
+
+<st>Key Takeaways</st>
+1. Reverse image search (Google Lens) = fastest first step for OSINT
+2. Match timestamp/scenes to confirm source validity
+3. Use AI assistants (YouTube, Bing) when available—saves time
+4. Cross-verify across platforms (YouTube → Instagram)
+5. Always verify flag format before submitting
+
+<st>Tools Used</st>
+- Google Lens (free, web-based)
+- YouTube (AI feature, requires account)
+- Browser inspect tools (for manual verification)
+
+Category: OSINT | Difficulty: Easy | Time: ~10 minutes | Status: ✅ Solved
