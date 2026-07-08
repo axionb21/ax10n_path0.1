@@ -1,6 +1,6 @@
-<t>Wotagei – OSINT Challenge</t>
+<t>Wotagei – OSINT Challenge </t>
 Event: No Hack No CTF 2026 (ICEDTEA)
-Category: OSINT | Points: 100
+Category: OSINT | Points: 100 | Team : c12cu17_f2y
 <img>https://raw.githubusercontent.com/axionb21/ax10n_path0.1/main/video.photo/6a3deea4-79ac-46ba-88df-9cf707cc28e6-1.png</img>
 <t>Challenge Description</t>
 Find the Instagram account of the person on the far left in a GIF file.
@@ -43,6 +43,7 @@ print(f"Video ID: {video_id}")
 </c>
 
 <st>Step 4 – Construct Flag</st>
+<img>https://raw.githubusercontent.com/axionb21/ax10n_path0.1/main/video.photo/complite.png</img>
 Format: NHNC{username}
 Substitute: gear_stephenie
 Final Flag: NHNC{gear_stephenie}
