@@ -28,7 +28,7 @@ Method: Upload GIF or extracted frame
 Result: Found YouTube video matching the GIF
 
 YouTube Channel: GinyuforcE-ギニューフォース-
-<l name="YouTube Video">https://youtu.be/FLELM-y-JpU?si=7V_gxhtS65YdLSQt</l>
+<url title="YouTube">https://youtu.be/FLELM-y-JpU?si=7V_gxhtS65YdLSQt</url>
 Timestamp Match: 00:20 → 00:25 (exact scene from GIF)
 
 <st>Step 3 – YouTube AI Feature</st>
