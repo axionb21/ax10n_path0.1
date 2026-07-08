@@ -12,26 +12,18 @@ The GIF showed people performing Wotagei (Japanese synchronized glow stick dance
 No metadata or hidden data → pure OSINT challenge.
 Strategy: Reverse image search to find original source.
 
-<c>
-# Extract frame from GIF (optional automation)
-from PIL import Image
-import os
-
-gif = Image.open('wota.gif')
-gif.seek(0)  # Get first frame
-gif.save('frame.png')
-</c>
 
 <st>Step 2 – Reverse Image Search</st>
 Tool: Google Lens (browser extension or web.google.com/imagesearch)
 Method: Upload GIF or extracted frame
 Result: Found YouTube video matching the GIF
-
+<img>https://raw.githubusercontent.com/axionb21/ax10n_path0.1/main/video.photo/youtubech.png</img>
 YouTube Channel: GinyuforcE-ギニューフォース-
-<url title="YouTube">https://youtu.be/FLELM-y-JpU?si=7V_gxhtS65YdLSQt</url>
+YouTube:- https://youtu.be/FLELM-y-JpU?si=7V_gxhtS65YdLSQt
 Timestamp Match: 00:20 → 00:25 (exact scene from GIF)
 
 <st>Step 3 – YouTube AI Feature</st>
+<img>https://raw.githubusercontent.com/axionb21/ax10n_path0.1/main/video.photo/2026-07-05_20_16_07-Downloads_-_File_Explorer.png</img>
 Instead of manual search, used YouTube's AI assistant.
 Question Asked: "What is the Instagram account of the person on the far left?"
 AI Response: gear_stephenie
