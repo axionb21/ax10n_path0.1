@@ -1,7 +1,7 @@
 <t>Wotagei – OSINT Challenge</t>
 Event: No Hack No CTF 2026 (ICEDTEA)
 Category: OSINT | Points: 100
-
+<img>video.photo/6a3deea4-79ac-46ba-88df-9cf707cc28e6.png</img>
 <t>Challenge Description</t>
 Find the Instagram account of the person on the far left in a GIF file.
 Flag Format: NHNC{their_instagram_username}
